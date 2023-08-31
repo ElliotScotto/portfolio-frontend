@@ -41,6 +41,7 @@ const PortfolioLanding = () => {
                         Elliot Scotto <br />
                         <TextLoop>
                           <span> Developpeur</span>
+                          <br />
                           <span> FullStack</span>
                           <span> Freelance</span>
                           <span> Javascript</span>
