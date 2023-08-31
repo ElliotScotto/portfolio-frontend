@@ -40,9 +40,10 @@ const PortfolioLanding = () => {
                         Je m'appelle <br />
                         Elliot Scotto <br />
                         <TextLoop>
-                          <span> Developpeur FullStack</span>
-                          <span> Javascript</span>
+                          <span> Developpeur</span>
+                          <span> FullStack</span>
                           <span> Freelance</span>
+                          <span> Javascript</span>
                         </TextLoop>{" "}
                       </h1>
                       <h3>Rosny-sur-Seine (78)</h3>
