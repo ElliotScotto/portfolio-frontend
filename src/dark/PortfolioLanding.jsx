@@ -171,6 +171,7 @@ const PortfolioLanding = () => {
                         GitHub
                       </a>
                     </p>
+                    <br />
                   </div>
                 </div>
               </div>

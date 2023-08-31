@@ -4,32 +4,39 @@ import { Link } from "react-router-dom";
 const PortfolioListContent = [
   {
     image: "barTapThumbnail",
-    category: "App mobile ",
-    description: "Front-end (UI avec React-Native)",
+    category: "App mobile",
+    description: "Front-end [React-Native]",
     title: "BarTap",
     details:
-      "http://drive.google.com/file/d/1Q_7BYsDTwj7RuobudVVYTH413aP59j-K/view?usp=drive_link",
+      "https://drive.google.com/file/d/1Q_7BYsDTwj7RuobudVVYTH413aP59j-K/view?usp=sharing",
+    explications: `Conçue par "Near Field Services" (Cleveland, US), les clients disposant du NFC accèdent aux informations et gagnent des récompenses provenant d'établissements partenaires : bars, restaurants... Elle offre aussi aux gérants une meilleure connaissance et gestion de leur clientèle.`,
+    role: "Mon Rôle : l'Interface Utilisateur MVP : création/connexion comptes, gestion des événements NFC, gestion des push-notifications, tutoriel, animations du Tap scan, traitement des données du serveur...",
   },
   {
     image: "marvelThumbnail",
     category: "Site web",
-    description: "Projet FullStack avec ReactJS & API Marvel Public",
+    description: "FullStack [ReactJS & Express]",
     title: "Marvel",
     details: "http://elliotscottomarvelapp.netlify.app/",
+    explications: "Clône du site web Marvel",
+    role: "Mon Rôle : Création/Connexion de compte utilisateur, Traitement et affichage des données de l'API Marvel, création d'un serveur Express avec APIs et BDD MongoDB...",
   },
   {
     image: "happyCowThumbnail",
-    category: "App mobile ",
-    description: "Projet FullStack React-Native & API OpenFoodFacts",
+    category: "App mobile",
+    description: "[React-Native]",
     title: "Happy Cow",
     details:
-      "http://drive.google.com/file/d/1RjdoJOXhNIQmyDA-73YdcGSNLPTAXcey/view?usp=drive_link",
+      "https://drive.google.com/file/d/1RjdoJOXhNIQmyDA-73YdcGSNLPTAXcey/view?usp=sharing",
+    explications:
+      "Clône de l'appli mobile Happy Cow répertoriant des établissements de restauration vegan et végétarien",
+    role: "Mon Rôle : Création de l'appli grâce à l'API OpenFoodFacts, geolocalisation des établissements répertoriés, compte-utilisateur, mise en favoris...",
   },
 ];
 // MANAGE STYLE ON _PORTFOLIO.SCSS
 class PortfolioList extends Component {
   render() {
-    const { column, styeVariation } = this.props; // Note the corrected "styleVariation"
+    const { column, styeVariation } = this.props;
     const list = PortfolioListContent.slice(0, this.props.item);
 
     return (
@@ -43,11 +50,15 @@ class PortfolioList extends Component {
               </div>
               <div className="content">
                 <div className="inner">
-                  <p>{value.category}</p>
                   <h4>
-                    <a href="/portfolio-details">{value.title}</a>
+                    <a>{value.title}</a>
+                    <p>{value.category}</p>
                   </h4>
-                  <h5>{value.description}</h5>
+                  <div className="allDetails">
+                    <h5>{value.description}</h5>
+                    <p>{value.explications}</p>
+                    <h6>{value.role}</h6>
+                  </div>
                   {!value.details ? null : (
                     <div className="portfolio-button">
                       <a className="rn-btn" href={value.details}>
@@ -59,6 +70,7 @@ class PortfolioList extends Component {
               </div>
               <Link className="link-overlay" to="/portfolio-details"></Link>
             </div>
+            <br />
           </div>
         ))}
       </React.Fragment>
