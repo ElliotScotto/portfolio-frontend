@@ -9,8 +9,8 @@ const PortfolioListContent = [
     title: "BarTap",
     details:
       "https://drive.google.com/file/d/1Q_7BYsDTwj7RuobudVVYTH413aP59j-K/view?usp=sharing",
-    explications: `Conçue par "Near Field Services" (Cleveland, US), les clients disposant du NFC accèdent aux informations et gagnent des récompenses provenant d'établissements partenaires : bars, restaurants... Elle offre aussi aux gérants une meilleure connaissance et gestion de leur clientèle.`,
-    role: "Mon Rôle : l'Interface Utilisateur MVP : création/connexion comptes, gestion des événements NFC, gestion des push-notifications, tutoriel, animations du Tap scan, traitement des données du serveur...",
+    explications: `Les clients disposant du NFC accèdent aux informations et gagnent des récompenses provenant de partenaires : bars, restaurants...`,
+    role: "Mon Rôle : Création MVP : comptes-utilisateur, événements NFC, push-notifications, tutoriel, animations, traitement des données...",
   },
   {
     image: "marvelThumbnail",
@@ -29,7 +29,7 @@ const PortfolioListContent = [
     details:
       "https://drive.google.com/file/d/1RjdoJOXhNIQmyDA-73YdcGSNLPTAXcey/view?usp=sharing",
     explications:
-      "Clône de l'appli mobile Happy Cow répertoriant des établissements de restauration vegan et végétarien",
+      "Clône de l'appli mobile Happy Cow répertoriant des établissements de restauration",
     role: "Mon Rôle : Création de l'appli grâce à l'API OpenFoodFacts, geolocalisation des établissements répertoriés, compte-utilisateur, mise en favoris...",
   },
 ];
